@@ -1,12 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Joyland Schools Portal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <h1>Welcome to Joyland Schools Portal</h1>
-    <p>If you see this page, your Flask app is running 🎉</p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Welcome to Joyland Schools Portal{% endblock %}
+
+{% block content %}
+<div class="landing-container">
+    <div class="hero">
+        <h1>Welcome to Joyland Schools Portal</h1>
+        <p>Your gateway to managing students, teachers, grades, and attendance—all in one place.</p>
+        <div class="buttons">
+            <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
+            <a href="{{ url_for('auth.register') }}" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+
+    <div class="features">
+        <div class="feature">
+            <h3>Student Dashboard</h3>
+            <p>View your grades, attendance, and personal information.</p>
+        </div>
+        <div class="feature">
+            <h3>Teacher Dashboard</h3>
+            <p>Manage classes, attendance, and communicate with students.</p>
+        </div>
+        <div class="feature">
+            <h3>Admin Dashboard</h3>
+            <p>Manage teachers, students, and school-wide settings.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
