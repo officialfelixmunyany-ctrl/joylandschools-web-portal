@@ -60,13 +60,15 @@ a:hover {
 /* Hero Section Styles */
 .hero-section {
     position: relative;
-    width: 100%;
-    min-height: 60vh;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('../img/hero-bg.jpg') no-repeat center center;
+    background: url('../img/hero-bg.jpg') no-repeat center center fixed;
     background-size: cover;
+    background-position: center;
+    z-index: 0;
 }
 .overlay {
     background: rgba(30, 30, 30, 0.85);
