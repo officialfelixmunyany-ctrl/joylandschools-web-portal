@@ -3,26 +3,16 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.db
-*.sqlite3
-
-# Virtual environments
-env/
-venv/
-.venv/
-
-# Environment variables
 .env
+.venv
+venv/
+env/
 
-# VS Code / IDE settings
-.vscode/
-.idea/
-
-# Node / frontend (in case you add React later)
+# Node
 node_modules/
-build/
-dist/
+npm-debug.log
+yarn-error.log
 
-# OS junk
+# OS
 .DS_Store
 Thumbs.db
