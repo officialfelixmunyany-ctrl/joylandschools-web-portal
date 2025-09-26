@@ -1,65 +1,114 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f0f4f8;
+/* General Reset */
+body, h1, h2, h3, p, a {
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
     color: #333;
 }
 
-header {
-    background: #2c7a7b;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav a {
-    color: #fff;
-    margin: 0 1rem;
+/* Header */
+header {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1rem 0;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+}
+
+header nav a {
+    color: white;
     text-decoration: none;
+    margin-left: 1rem;
     font-weight: bold;
 }
 
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 4rem 0;
+    background: #e6f2ff;
 }
 
 .hero h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 2rem;
 }
 
-.buttons .btn {
-    padding: 0.8rem 1.5rem;
-    margin: 0 0.5rem;
-    border-radius: 5px;
+.hero .buttons .btn {
     text-decoration: none;
-    color: #fff;
+    padding: 0.75rem 2rem;
+    margin: 0 0.5rem;
+    background-color: #1e90ff;
+    color: white;
+    border-radius: 5px;
     font-weight: bold;
 }
 
-.btn-primary {
-    background-color: #2c7a7b;
+.hero .buttons .btn:hover {
+    background-color: #0d6efd;
 }
 
-.btn-secondary {
-    background-color: #4fd1c5;
+.hero .buttons .btn-secondary {
+    background-color: #32cd32;
 }
 
+.hero .buttons .btn-secondary:hover {
+    background-color: #28a745;
+}
+
+/* Features Section */
 .features {
     display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    gap: 2rem;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background-color: #fff;
 }
 
 .feature {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     text-align: center;
+    max-width: 300px;
+}
+
+.feature h3 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1e90ff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
 }

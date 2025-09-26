@@ -4,39 +4,60 @@
     <meta charset="UTF-8">
     <title>Joyland Schools Portal</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to Joyland Schools Portal</h1>
-        <nav>
-            <a href="{{ url_for('auth.login') }}">Login</a>
-            <a href="{{ url_for('auth.register') }}">Register</a>
-        </nav>
+        <div class="container">
+            <h1>Joyland Schools Portal</h1>
+            <nav>
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+                <a href="#features">Features</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="hero">
-            <h2>Your gateway to managing students, teachers, grades, and attendance.</h2>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Joyland Schools Portal</h2>
+            <p>Manage students, teachers, attendance, and grades—all in one place.</p>
             <div class="buttons">
-                <a href="{{ url_for('auth.login') }}" class="btn btn-primary">Login</a>
-                <a href="{{ url_for('auth.register') }}" class="btn btn-secondary">Register</a>
+                <a href="/login" class="btn">Login</a>
+                <a href="/register" class="btn btn-secondary">Register</a>
             </div>
         </div>
+    </section>
 
-        <div class="features">
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
             <div class="feature">
+                <i class="fa-solid fa-user-graduate fa-3x"></i>
                 <h3>Student Dashboard</h3>
-                <p>View grades, attendance, and personal info.</p>
+                <p>View grades, attendance, and personal info easily.</p>
             </div>
             <div class="feature">
+                <i class="fa-solid fa-chalkboard-teacher fa-3x"></i>
                 <h3>Teacher Dashboard</h3>
                 <p>Manage classes, attendance, and communicate with students.</p>
             </div>
             <div class="feature">
+                <i class="fa-solid fa-school fa-3x"></i>
                 <h3>Admin Dashboard</h3>
                 <p>Manage teachers, students, and school-wide settings.</p>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
+            <p>Contact: info@joylandschools.com | Phone: +254 700 000000</p>
+        </div>
+    </footer>
 </body>
 </html>
