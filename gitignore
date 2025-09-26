@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# VS Code / IDE settings
+.vscode/
+.idea/
+
+# Node / frontend (in case you add React later)
+node_modules/
+build/
+dist/
+
+# OS junk
+.DS_Store
+Thumbs.db
