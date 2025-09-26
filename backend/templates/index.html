@@ -8,57 +8,49 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Joyland Schools Portal</h1>
-            <nav>
-                <a href="/login">Login</a>
-                <a href="/register">Register</a>
-                <a href="#features">Features</a>
-            </nav>
-        </div>
+    <header class="main-header">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo-img" alt="Joyland Schools Logo" />
+        <nav class="nav-bar">
+            <span class="logo-text">JOYLAND SCHOOLS PORTAL</span>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-                <div class="hero-section">
-                    <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo-img" alt="Joyland Schools Logo" />
-                    <div class="overlay">
-                        <div class="logo-text">JOYLAND SCHOOLS</div>
-                        <h1>Reliable, personal, and responsive</h1>
-                        <p>Joyland Schools ensures every student receives the best education and support.</p>
-                        <button class="cta-btn">GET STARTED</button>
-                    </div>
-                </div>
+    <section class="hero-section">
+        <div class="overlay">
+            <h1>Reliable, personal, and responsive</h1>
+            <p>Joyland Schools ensures every student receives the best education and support.</p>
+            <button class="cta-btn">GET STARTED</button>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="features" class="features">
-        <div class="container">
-            <div class="feature">
-                <i class="fa-solid fa-user-graduate fa-3x"></i>
-                <h3>Student Dashboard</h3>
-                <p>View grades, attendance, and personal info easily.</p>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-chalkboard-teacher fa-3x"></i>
-                <h3>Teacher Dashboard</h3>
-                <p>Manage classes, attendance, and communicate with students.</p>
-            </div>
-            <div class="feature">
-                <i class="fa-solid fa-school fa-3x"></i>
-                <h3>Admin Dashboard</h3>
-                <p>Manage teachers, students, and school-wide settings.</p>
-            </div>
+        <div class="feature">
+            <i class="fa-solid fa-user-graduate fa-3x"></i>
+            <h3>Student Dashboard</h3>
+            <p>View grades, attendance, and personal info easily.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-chalkboard-teacher fa-3x"></i>
+            <h3>Teacher Dashboard</h3>
+            <p>Manage classes, attendance, and communicate with students.</p>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-school fa-3x"></i>
+            <h3>Admin Dashboard</h3>
+            <p>Manage teachers, students, and school-wide settings.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
+    <footer class="main-footer">
+        <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
             <p>Contact: info@joylandschools.com | Phone: +254 700 000000</p>
         </div>
     </footer>
