@@ -9,7 +9,7 @@
 <body>
     <!-- Header -->
     <header class="main-header">
-        <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo-img" alt="Joyland Schools Logo" />
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img" alt="Joyland Schools Logo" />
         <nav class="nav-bar">
             <span class="logo-text">JOYLAND SCHOOLS PORTAL</span>
             <ul>
@@ -25,7 +25,7 @@
         <div class="overlay">
             <h1>Reliable, personal, and responsive</h1>
             <p>Joyland Schools ensures every student receives the best education and support.</p>
-            <button class="cta-btn">GET STARTED</button>
+            <a href="/register" class="cta-btn">GET STARTED</a>
         </div>
     </section>
 
@@ -46,11 +46,17 @@
             <h3>Admin Dashboard</h3>
             <p>Manage teachers, students, and school-wide settings.</p>
         </div>
+        <div class="feature">
+            <i class="fa-solid fa-users fa-3x"></i>
+            <h3>Parent Portal</h3>
+            <p>Monitor your child’s progress and stay informed.</p>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer class="main-footer">
         <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
+    </footer>
             <p>Contact: info@joylandschools.com | Phone: +254 700 000000</p>
         </div>
     </footer>
