@@ -22,12 +22,15 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Joyland Schools Portal</h2>
-            <p>Manage students, teachers, attendance, and grades—all in one place.</p>
-            <div class="buttons">
-                <a href="/login" class="btn">Login</a>
-                <a href="/register" class="btn btn-secondary">Register</a>
-            </div>
+                <div class="hero-section">
+                    <img src="{{ url_for('static', filename='img/logo.png') }}" class="logo-img" alt="Joyland Schools Logo" />
+                    <div class="overlay">
+                        <div class="logo-text">JOYLAND SCHOOLS</div>
+                        <h1>Reliable, personal, and responsive</h1>
+                        <p>Joyland Schools ensures every student receives the best education and support.</p>
+                        <button class="cta-btn">GET STARTED</button>
+                    </div>
+                </div>
         </div>
     </section>
 
