@@ -7,18 +7,25 @@
 </head>
 <body>
     <main>
-        <section class="overlay" style="max-width:350px;margin:3rem auto;">
-            <h1>Register</h1>
+        <section class="overlay accent-bar" style="margin:3rem auto;">
+            <h1 style="margin-bottom:1.5rem;">Register</h1>
             <form>
-                <label for="username">Username</label><br>
-                <input type="text" id="username" name="username" required><br><br>
-                <label for="email">Email</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="password">Password</label><br>
-                <input type="password" id="password" name="password" required><br><br>
-                <button class="cta-btn" type="submit">Register</button>
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button class="cta-btn" type="submit" style="width:100%;margin-top:0.5rem;">Register</button>
             </form>
         </section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     </main>
 </body>
 </html>
