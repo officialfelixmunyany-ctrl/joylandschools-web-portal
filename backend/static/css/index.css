@@ -226,20 +226,74 @@ a:hover {
     z-index: 0;
 }
 .overlay {
-    background: rgba(255, 255, 255, 0.55);
-    color: #2d2d2d;
-    padding: 1.2rem 1.2rem;
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-    max-width: 370px;
-    z-index: 2;
+        background: rgba(255, 255, 255, 0.55);
+        color: #2d2d2d;
+        padding: 2.5rem 2.5rem 2rem 2.5rem;
+        border-radius: 24px;
+        box-shadow: 0 8px 32px 0 rgba(83,193,253,0.18), 0 2px 32px 0 rgba(253,94,83,0.08);
+        max-width: 480px;
+        z-index: 2;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        backdrop-filter: blur(16px) saturate(1.2);
+        -webkit-backdrop-filter: blur(16px) saturate(1.2);
+        border: 2px solid rgba(253,94,83,0.10);
+        border-image: linear-gradient(135deg, #f7b731 0%, #53c1fd 100%);
+        border-image-slice: 1;
+        animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) 0.1s both;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Input with icon wrapper */
+.input-icon {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    backdrop-filter: blur(12px) saturate(1.2);
-    -webkit-backdrop-filter: blur(12px) saturate(1.2);
-    border: 1px solid rgba(255,255,255,0.25);
+    width: 100%;
+    margin-bottom: 1.2rem;
+}
+.input-icon input {
+    width: 100%;
+    padding: 0.7rem 0.7rem 0.7rem 2.5rem;
+    border-radius: 8px;
+    border: 1.5px solid #e0e7ef;
+    background: rgba(255,255,255,0.85);
+    font-size: 1rem;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 8px rgba(83,193,253,0.04);
+}
+.input-icon input:focus {
+    border: 1.5px solid #53c1fd;
+    box-shadow: 0 0 0 3px rgba(83,193,253,0.13);
+    outline: none;
+}
+.input-icon i {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #53c1fd;
+    font-size: 1.1rem;
+    opacity: 0.85;
+    pointer-events: none;
+}
+
+/* Accent bar for wide forms */
+.overlay.accent-bar {
+    border-left: 8px solid #f7b731;
+    border-radius: 24px;
+    padding-left: 2.2rem;
+}
 }
 .overlay h1 {
     color: #f7b731;
