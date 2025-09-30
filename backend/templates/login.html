@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Joyland Schools Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+    <main>
+        <section class="overlay" style="max-width:350px;margin:3rem auto;">
+            <h1>Login</h1>
+            <form>
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" required><br><br>
+                <button class="cta-btn" type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
