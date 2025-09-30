@@ -1,3 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Subtle interactive effect for overlay */
+.overlay {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.overlay:hover {
+    box-shadow: 0 12px 32px rgba(83,193,253,0.18);
+    transform: translateY(-2px) scale(1.01);
+}
 /* Responsive Styles */
 @media (max-width: 1024px) {
     .hero-section {
@@ -114,14 +125,24 @@ ul {
     display: flex;
     gap: 1.5rem;
 }
+/* Enhanced link styles */
 a {
     text-decoration: none;
     color: #222;
     font-weight: 500;
-    transition: color 0.2s;
+    transition: color 0.2s, box-shadow 0.2s;
+    border-radius: 3px;
+    padding: 2px 4px;
+}
+a:focus, a:active {
+    outline: 2px solid #fd5e53;
+    outline-offset: 2px;
+    background: #f7b73122;
 }
 a:hover {
-    color: #007bff;
+    color: #fd5e53;
+    background: #f7b73122;
+    box-shadow: 0 2px 8px rgba(253,94,83,0.08);
 }
 
 /* Header Styles */
@@ -208,11 +229,22 @@ a:hover {
     font-size: 1rem;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: background 0.2s, color 0.2s;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.1s;
+    outline: none;
+}
+.cta-btn:focus, .cta-btn:active {
+    outline: 2px solid #53c1fd;
+    outline-offset: 2px;
+    background: linear-gradient(90deg, #f7b731 0%, #53c1fd 100%);
+    color: #fff;
+    box-shadow: 0 4px 16px rgba(83,193,253,0.15);
+    transform: scale(0.98);
 }
 .cta-btn:hover {
     background: linear-gradient(90deg, #53c1fd 0%, #fd5e53 100%);
     color: #fff;
+    box-shadow: 0 4px 16px rgba(253,94,83,0.15);
+    transform: translateY(-2px) scale(1.03);
 }
 
 /* Features Section */
