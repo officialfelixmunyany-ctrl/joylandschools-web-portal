@@ -129,7 +129,7 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #2196f3;
+    background: #f7b731;
     padding: 0.75rem 2rem;
     position: relative;
 }
@@ -144,25 +144,26 @@ a:hover {
     gap: 2rem;
 }
 .logo-text {
-    color: #fff;
+    color: #fd5e53;
     font-size: 1.3rem;
     font-weight: bold;
     letter-spacing: 2px;
     margin-right: 2rem;
 }
 .nav-bar ul li a {
-    color: #fff;
+    color: #2d2d2d;
     font-size: 1rem;
+    font-weight: bold;
 }
 .nav-bar ul li a:hover {
-    color: #ffeb3b;
+    color: #fd5e53;
 }
 
 /* Hero Section Styles */
 .hero-section {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,41 +173,45 @@ a:hover {
     z-index: 0;
 }
 .overlay {
-    background: rgba(30, 30, 30, 0.85);
-    color: #fff;
-    padding: 2.5rem 2rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    max-width: 400px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #2d2d2d;
+    padding: 1.2rem 1.2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+    max-width: 370px;
     z-index: 2;
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 .overlay h1 {
-    color: #ff4c4c;
-    font-size: 2rem;
+    color: #f7b731;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
 }
 .overlay p {
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.98rem;
+    margin-bottom: 1.1rem;
+    color: #2d2d2d;
+    text-align: center;
 }
 .cta-btn {
-    background: #fff;
-    color: #222;
-    padding: 0.75rem 1.5rem;
+    background: linear-gradient(90deg, #f7b731 0%, #fd5e53 100%);
+    color: #fff;
+    padding: 0.6rem 1.1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     font-weight: bold;
     font-size: 1rem;
     cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     transition: background 0.2s, color 0.2s;
 }
 .cta-btn:hover {
-    background: #ff4c4c;
+    background: linear-gradient(90deg, #53c1fd 0%, #fd5e53 100%);
     color: #fff;
 }
 
@@ -215,7 +220,7 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 2.5rem;
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 0 1rem 0;
     background: #fff;
 }
 .feature {
@@ -227,7 +232,7 @@ a:hover {
     width: 220px;
 }
 .feature i {
-    color: #2196f3;
+    color: #53c1fd;
     margin-bottom: 1rem;
 }
 .feature h3 {
@@ -241,7 +246,7 @@ a:hover {
 
 /* Footer Styles */
 .main-footer {
-    background: #222;
+    background: #fd5e53;
     color: #fff;
     text-align: center;
     padding: 1.2rem 0;
