@@ -1,5 +1,5 @@
 .hero-card {
-    background: rgba(255,255,255,0.97);
+    background: rgba(255,255,255,0.55);
     color: #2d2d2d;
     border-radius: 16px;
     box-shadow: 0 8px 32px rgba(83,193,253,0.18);
@@ -10,6 +10,9 @@
     flex-direction: column;
     align-items: center;
     transition: box-shadow 0.2s, transform 0.2s;
+    backdrop-filter: blur(12px) saturate(1.2);
+    -webkit-backdrop-filter: blur(12px) saturate(1.2);
+    border: 1px solid rgba(255,255,255,0.25);
 }
 .hero-card h1 {
     color: #f7b731;
@@ -223,7 +226,7 @@ a:hover {
     z-index: 0;
 }
 .overlay {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.55);
     color: #2d2d2d;
     padding: 1.2rem 1.2rem;
     border-radius: 16px;
@@ -234,6 +237,9 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(12px) saturate(1.2);
+    -webkit-backdrop-filter: blur(12px) saturate(1.2);
+    border: 1px solid rgba(255,255,255,0.25);
 }
 .overlay h1 {
     color: #f7b731;
