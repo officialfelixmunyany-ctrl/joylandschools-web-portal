@@ -1,7 +1,25 @@
-@app.route('/forgot-password')
-def forgot_password():
-    # Placeholder page for future implementation
-    return render_template('forgot_password.html')
+
+from flask import Flask, render_template, redirect, url_for, request, flash, jsonify
+from flask_sqlalchemy import SQLAlchemy
+from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
+from werkzeug.security import generate_password_hash, check_password_hash
+from flask_wtf import FlaskForm, CSRFProtect
+from wtforms import StringField, PasswordField, SubmitField
+from wtforms.validators import DataRequired, Email, Length
+import os
+
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get(
+    'DATABASE_URL',
+    'postgresql://joylandschools_portal_user:DeYXLM31QPb1EcaXEhqPKhhuaBfidhVu@dpg-d3e28cvfte5s73f4eaqg-a/joylandschools_portal'
+)
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+db = SQLAlchemy(app)
+login_manager = LoginManager(app)
+login_manager.login_view = 'login'
+csrf = CSRFProtect(app)
 
 # Error handlers must be after app is defined
 @app.errorhandler(404)
@@ -11,6 +29,12 @@ def not_found_error(error):
 @app.errorhandler(500)
 def internal_error(error):
     return render_template('500.html'), 500
+
+# Placeholder forgot password route
+@app.route('/forgot-password')
+def forgot_password():
+    # Placeholder page for future implementation
+    return render_template('forgot_password.html')
 
 from flask import Flask, render_template, redirect, url_for, request, flash, jsonify
 from flask_sqlalchemy import SQLAlchemy
