@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="main-header">
-        <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img" alt="Joyland Schools Logo" />
-        <nav class="nav-bar">
+    <header class="main-header" role="banner">
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img" alt="Joyland Schools logo with colorful mosaic background" />
+        <nav class="nav-bar" aria-label="Main navigation">
             <span class="logo-text">JOYLAND SCHOOLS PORTAL</span>
             <ul>
                 <li><a href="/login">Login</a></li>
@@ -20,45 +19,42 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="overlay">
-            <h1>Reliable, personal, and responsive</h1>
-            <p>Joyland Schools ensures every student receives the best education and support.</p>
-            <a href="/register" class="cta-btn">GET STARTED</a>
-        </div>
-    </section>
+    <main>
+        <section class="hero-section" aria-label="Welcome">
+            <div class="overlay">
+                <h1>Reliable, personal, and responsive</h1>
+                <p>Joyland Schools ensures every student receives the best education and support.</p>
+                <a href="/register" class="cta-btn" aria-label="Get started with Joyland Schools">GET STARTED</a>
+            </div>
+        </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="feature">
-            <i class="fa-solid fa-user-graduate fa-3x"></i>
-            <h3>Student Dashboard</h3>
-            <p>View grades, attendance, and personal info easily.</p>
-        </div>
-        <div class="feature">
-            <i class="fa-solid fa-chalkboard-teacher fa-3x"></i>
-            <h3>Teacher Dashboard</h3>
-            <p>Manage classes, attendance, and communicate with students.</p>
-        </div>
-        <div class="feature">
-            <i class="fa-solid fa-school fa-3x"></i>
-            <h3>Admin Dashboard</h3>
-            <p>Manage teachers, students, and school-wide settings.</p>
-        </div>
-        <div class="feature">
-            <i class="fa-solid fa-users fa-3x"></i>
-            <h3>Parent Portal</h3>
-            <p>Monitor your child’s progress and stay informed.</p>
-        </div>
-    </section>
+        <section id="features" class="features" aria-label="Portal Features">
+            <div class="feature">
+                <i class="fa-solid fa-user-graduate fa-3x" aria-hidden="true"></i>
+                <h3>Student Dashboard</h3>
+                <p>View grades, attendance, and personal info easily.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-chalkboard-teacher fa-3x" aria-hidden="true"></i>
+                <h3>Teacher Dashboard</h3>
+                <p>Manage classes, attendance, and communicate with students.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-school fa-3x" aria-hidden="true"></i>
+                <h3>Admin Dashboard</h3>
+                <p>Manage teachers, students, and school-wide settings.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-users fa-3x" aria-hidden="true"></i>
+                <h3>Parent Portal</h3>
+                <p>Monitor your child’s progress and stay informed.</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="main-footer">
+    <footer class="main-footer" role="contentinfo">
         <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
-    </footer>
-            <p>Contact: info@joylandschools.com | Phone: +254 700 000000</p>
-        </div>
+        <p>Contact: <a href="mailto:info@joylandschools.com">info@joylandschools.com</a> | Phone: +254 700 000000</p>
     </footer>
 </body>
 </html>
