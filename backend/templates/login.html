@@ -1,27 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login - Joyland Schools Portal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-</head>
-<body>
-    <main>
-        <section class="overlay accent-bar" style="margin:3rem auto;">
-            <h1 style="margin-bottom:1.5rem;">Login</h1>
-            <form>
-                <div class="input-icon">
-                    <i class="fa fa-user"></i>
-                    <input type="text" id="username" name="username" placeholder="Username" required>
-                </div>
-                <div class="input-icon">
-                    <i class="fa fa-lock"></i>
-                    <input type="password" id="password" name="password" placeholder="Password" required>
-                </div>
-                <button class="cta-btn" type="submit" style="width:100%;margin-top:0.5rem;">Login</button>
-            </form>
-        </section>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    </main>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Login - Joyland Schools Portal{% endblock %}
+{% block content %}
+    <section class="form-overlay accent-bar" style="margin:3rem auto;">
+        <h1 style="margin-bottom:1.5rem;">Login</h1>
+        <form>
+            <div class="input-icon">
+                <i class="fa fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button class="cta-btn" type="submit" style="width:100%;margin-top:0.5rem;">Login</button>
+        </form>
+    </section>
+{% endblock %}

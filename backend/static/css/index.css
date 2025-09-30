@@ -1,18 +1,53 @@
+/* Color Theme Variables */
+:root {
+    --primary-yellow: #f7b731;
+    --primary-blue: #53c1fd;
+    --primary-orange: #fd5e53;
+    --accent-bg: #f5f7fa;
+    --accent-bg-dark: #f0f8ff;
+    --text-main: #2d2d2d;
+    --text-light: #fff;
+    --glass-bg: rgba(255,255,255,0.55);
+    --glass-border: rgba(255,255,255,0.25);
+    --glass-shadow: 0 8px 32px rgba(83,193,253,0.18);
+    --form-shadow: 0 8px 32px 0 rgba(83,193,253,0.18), 0 2px 32px 0 rgba(253,94,83,0.08);
+}
 .hero-card {
-    background: rgba(255,255,255,0.55);
-    color: #2d2d2d;
-    border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(83,193,253,0.18);
-    max-width: 370px;
+    background: var(--glass-bg);
+    color: var(--text-main);
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    max-width: 420px;
     margin: 3rem auto;
-    padding: 1.5rem 1.2rem;
+    padding: 2.2rem 1.7rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: box-shadow 0.2s, transform 0.2s;
     backdrop-filter: blur(12px) saturate(1.2);
     -webkit-backdrop-filter: blur(12px) saturate(1.2);
-    border: 1px solid rgba(255,255,255,0.25);
+    border: 1.5px solid var(--glass-border);
+}
+/* Form Overlay: visually distinct from hero */
+.form-overlay {
+    background: var(--glass-bg);
+    color: var(--text-main);
+    border-radius: 24px;
+    box-shadow: var(--form-shadow);
+    max-width: 480px;
+    margin: 3rem auto;
+    padding: 2.5rem 2.5rem 2rem 2.5rem;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border: 2px solid rgba(253,94,83,0.10);
+    border-image: linear-gradient(135deg, var(--primary-yellow) 0%, var(--primary-blue) 100%);
+    border-image-slice: 1;
+    animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) 0.1s both;
 }
 .hero-card h1 {
     color: #f7b731;
@@ -225,25 +260,7 @@ a:hover {
     background-position: center;
     z-index: 0;
 }
-.overlay {
-        background: rgba(255, 255, 255, 0.55);
-        color: #2d2d2d;
-        padding: 2.5rem 2.5rem 2rem 2.5rem;
-        border-radius: 24px;
-        box-shadow: 0 8px 32px 0 rgba(83,193,253,0.18), 0 2px 32px 0 rgba(253,94,83,0.08);
-        max-width: 480px;
-        z-index: 2;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        backdrop-filter: blur(16px) saturate(1.2);
-        -webkit-backdrop-filter: blur(16px) saturate(1.2);
-        border: 2px solid rgba(253,94,83,0.10);
-        border-image: linear-gradient(135deg, #f7b731 0%, #53c1fd 100%);
-        border-image-slice: 1;
-        animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) 0.1s both;
-}
+
 
 @keyframes fadeInUp {
     0% {
@@ -289,23 +306,23 @@ a:hover {
 }
 
 /* Accent bar for wide forms */
-.overlay.accent-bar {
-    border-left: 8px solid #f7b731;
+.form-overlay.accent-bar {
+    border-left: 8px solid var(--primary-yellow);
     border-radius: 24px;
     padding-left: 2.2rem;
 }
 
-.overlay h1 {
-    color: #f7b731;
+.form-overlay h1, .hero-card h1 {
+    color: var(--primary-yellow);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 0.7rem;
     text-align: center;
 }
-.overlay p {
+.form-overlay p, .hero-card p {
     font-size: 0.98rem;
     margin-bottom: 1.1rem;
-    color: #2d2d2d;
+    color: var(--text-main);
     text-align: center;
 }
 .cta-btn {

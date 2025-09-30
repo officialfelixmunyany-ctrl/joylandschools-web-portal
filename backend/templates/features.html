@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Features - Joyland Schools Portal</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-</head>
-<body>
-    <main>
-        <section class="overlay" style="max-width:500px;margin:3rem auto;">
-            <h1>Portal Features</h1>
-            <ul>
-                <li>Student Dashboard: View grades, attendance, and personal info easily.</li>
-                <li>Teacher Dashboard: Manage classes, attendance, and communicate with students.</li>
-                <li>Admin Dashboard: Manage teachers, students, and school-wide settings.</li>
-                <li>Parent Portal: Monitor your child’s progress and stay informed.</li>
-            </ul>
-        </section>
-    </main>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}Features - Joyland Schools Portal{% endblock %}
+{% block content %}
+    <section class="form-overlay accent-bar" style="max-width:500px;margin:3rem auto;">
+        <h1>Portal Features</h1>
+        <ul>
+            <li>Student Dashboard: View grades, attendance, and personal info easily.</li>
+            <li>Teacher Dashboard: Manage classes, attendance, and communicate with students.</li>
+            <li>Admin Dashboard: Manage teachers, students, and school-wide settings.</li>
+            <li>Parent Portal: Monitor your child’s progress and stay informed.</li>
+        </ul>
+    </section>
+{% endblock %}

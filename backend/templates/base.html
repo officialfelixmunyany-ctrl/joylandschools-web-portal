@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Joyland Schools Portal{% endblock %}</title>
+    <meta name="description" content="Joyland Schools Portal: Reliable, personal, and responsive education management for students, teachers, parents, and administrators.">
+    <meta name="keywords" content="Joyland Schools, school portal, student dashboard, teacher dashboard, parent portal, education, Kenya">
+    <meta name="author" content="Joyland Schools">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <img src="{{ url_for('static', filename='img/logo.jpg') }}" class="logo-img" alt="Joyland Schools logo with colorful mosaic background" />
+        <nav class="nav-bar" aria-label="Main navigation">
+            <span class="logo-text">JOYLAND SCHOOLS PORTAL</span>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+                <li><a href="/features">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="main-footer" role="contentinfo">
+        <p>&copy; 2025 Joyland Schools. All rights reserved.</p>
+        <p>Contact: <a href="mailto:info@joylandschools.com">info@joylandschools.com</a> | Phone: +254 700 000000</p>
+    </footer>
+    {% block scripts %}{% endblock %}
+</body>
+</html>
