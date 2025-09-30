@@ -1,3 +1,32 @@
+.hero-card {
+    background: rgba(255,255,255,0.97);
+    color: #2d2d2d;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(83,193,253,0.18);
+    max-width: 370px;
+    margin: 3rem auto;
+    padding: 1.5rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.hero-card h1 {
+    color: #f7b731;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+.hero-card p {
+    font-size: 0.98rem;
+    margin-bottom: 1.1rem;
+    color: #2d2d2d;
+    text-align: center;
+}
+.hero-card .cta-btn {
+    margin-top: 0.5rem;
+}
 html {
     scroll-behavior: smooth;
 }
