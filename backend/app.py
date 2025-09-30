@@ -1,3 +1,7 @@
+@app.route('/forgot-password')
+def forgot_password():
+    # Placeholder page for future implementation
+    return render_template('forgot_password.html')
 
 # Error handlers must be after app is defined
 @app.errorhandler(404)

@@ -17,6 +17,9 @@
                 {{ form.password(class_="", id="password", placeholder="Password") }}
             </div>
             {{ form.submit(class_="cta-btn", style="width:100%;margin-top:0.5rem;") }}
+            <div style="text-align:right; margin-top:0.7rem; width:100%;">
+                <a href="{{ url_for('forgot_password') }}" style="color:#53c1fd; font-size:0.98rem; text-decoration:underline; opacity:0.85;">Forgot Password?</a>
+            </div>
         </form>
     </section>
 {% endblock %}
