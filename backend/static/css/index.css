@@ -1,3 +1,25 @@
+/* Utility classes for inline style replacements */
+.m-3-auto { margin: 3rem auto !important; }
+.mt-4-5-auto { margin: 4.5rem auto !important; }
+.mb-1-2 { margin-bottom: 1.2rem !important; }
+.mb-1-5 { margin-bottom: 1.5rem !important; }
+.mt-0-5 { margin-top: 0.5rem !important; }
+.mt-0-7 { margin-top: 0.7rem !important; }
+.w-100 { width: 100% !important; }
+.max-w-500 { max-width: 500px !important; }
+.min-h-220 { min-height: 220px !important; }
+.d-flex { display: flex !important; }
+.flex-col { flex-direction: column !important; }
+.align-center { align-items: center !important; }
+.justify-center { justify-content: center !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.color-555 { color: #555 !important; }
+.color-53c1fd { color: #53c1fd !important; }
+.font-size-098 { font-size: 0.98rem !important; }
+.text-underline { text-decoration: underline !important; }
+.opacity-085 { opacity: 0.85 !important; }
+.max-w-320 { max-width: 320px !important; }
 /* Animated Gradient Border for Hero and Form Overlays */
 .hero-card, .form-overlay {
     position: relative;

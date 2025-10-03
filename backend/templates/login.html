@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block title %}Login - Joyland Schools Portal{% endblock %}
 {% block content %}
-    <section class="form-overlay accent-bar" style="margin:3rem auto;">
+    <section class="form-overlay accent-bar m-3-auto">
         <span class="float-shape float-shape1"></span>
         <span class="float-shape float-shape2"></span>
         <span class="float-shape float-shape3"></span>
-        <h1 style="margin-bottom:1.5rem;">Login</h1>
+    <h1 class="mb-1-5">Login</h1>
         <form method="POST" action="">
             {{ form.hidden_tag() }}
             <div class="input-icon">
@@ -16,9 +16,9 @@
                 <i class="fa fa-lock"></i>
                 {{ form.password(class_="", id="password", placeholder="Password") }}
             </div>
-            {{ form.submit(class_="cta-btn", style="width:100%;margin-top:0.5rem;") }}
-            <div style="text-align:right; margin-top:0.7rem; width:100%;">
-                <a href="{{ url_for('forgot_password') }}" style="color:#53c1fd; font-size:0.98rem; text-decoration:underline; opacity:0.85;">Forgot Password?</a>
+            {{ form.submit(class_="cta-btn w-100 mt-0-5") }}
+            <div class="text-right mt-0-7 w-100">
+                <a href="{{ url_for('forgot_password') }}" class="color-53c1fd font-size-098 text-underline opacity-085">Forgot Password?</a>
             </div>
         </form>
     </section>
